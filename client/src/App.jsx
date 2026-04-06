@@ -33,8 +33,9 @@ function App() {
           <Route path="/register" element={<Register />} />
 
           <Route path="/" element={<SharedLayout />}>
+            <Route index element={<Navigate to="/home" replace />} />
             <Route
-              index
+              path="home"
               element={
                 <>
                   <Hero />
@@ -46,7 +47,6 @@ function App() {
                 </>
               }
             />
-            <Route path="home" element={<Navigate to="/" replace />} />
             <Route
               path="medicine-store"
               element={
