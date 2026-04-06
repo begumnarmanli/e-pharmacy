@@ -23,7 +23,7 @@ const LoginModal = ({ onClose, onSwitchToRegister, onSuccess }) => {
     setLoading(true);
     try {
       const { data } = await axios.post(
-        "${import.meta.env.VITE_API_URL}/api/users/login",
+        `${import.meta.env.VITE_API_URL}/api/users/login`,
         {
           email,
           password,

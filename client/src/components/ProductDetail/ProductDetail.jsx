@@ -37,7 +37,7 @@ const ProductDetail = () => {
 
     const fetchReviews = async () => {
       try {
-        const { data } = await axios.get("${import.meta.env.VITE_API_URL}/api/reviews");
+        const { data } = await axios.get(`${import.meta.env.VITE_API_URL}/api/reviews`);
         setReviews(data);
       } catch (error) {
         if (import.meta.env.DEV)

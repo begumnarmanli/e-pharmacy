@@ -9,7 +9,7 @@ const PharmacyList = () => {
   const [pharmacies, setPharmacies] = useState([]);
 
   useEffect(() => {
-    fetch("${import.meta.env.VITE_API_URL}/api/nearest_pharmacies")
+    fetch(`${import.meta.env.VITE_API_URL}/api/nearest_pharmacies`)
       .then((res) => res.json())
       .then((data) => setPharmacies(data))
       .catch((err) => {
