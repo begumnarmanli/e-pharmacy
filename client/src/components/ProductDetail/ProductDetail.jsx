@@ -24,7 +24,7 @@ const ProductDetail = () => {
     const fetchProduct = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:5000/api/products/${id}`,
+          `${import.meta.env.VITE_API_URL}/api/products/${id}`,
         );
         setProduct(data);
       } catch (error) {
@@ -37,7 +37,7 @@ const ProductDetail = () => {
 
     const fetchReviews = async () => {
       try {
-        const { data } = await axios.get("http://localhost:5000/api/reviews");
+        const { data } = await axios.get("${import.meta.env.VITE_API_URL}/api/reviews");
         setReviews(data);
       } catch (error) {
         if (import.meta.env.DEV)

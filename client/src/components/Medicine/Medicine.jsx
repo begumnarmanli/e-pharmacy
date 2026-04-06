@@ -43,7 +43,7 @@ const Medicine = () => {
   const fetchProducts = useCallback(async () => {
     try {
       setLoading(true);
-      const { data } = await axios.get(`http://localhost:5000/api/products`, {
+      const { data } = await axios.get(`${import.meta.env.VITE_API_URL}/api/products`, {
         params: {
           category: category !== "All" ? category : undefined,
           search: searchTerm || undefined,
