@@ -1,0 +1,735 @@
+.authContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  --auth-diagonal: clamp(48.5rem, calc(11vw + 9vh), 13rem);
+  --auth-diagonal-overlap: 1px;
+  --auth-form-offset-y: 0;
+  --auth-anim-duration: 3s;
+}
+
+@property --sweep {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes curtainBottle {
+  0% {
+    --sweep: 0deg;
+    opacity: 1;
+  }
+  40% {
+    --sweep: 360deg;
+    opacity: 1;
+  }
+  47% {
+    --sweep: 360deg;
+    opacity: 1;
+  }
+  99% {
+    --sweep: 0deg;
+    opacity: 1;
+  }
+  100% {
+    --sweep: 0deg;
+    opacity: 0;
+  }
+}
+
+.curtain {
+  --sweep: 0deg;
+  position: absolute;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+  background-color: var(--color-green);
+  opacity: 0;
+  mask-image: conic-gradient(
+    from -90deg at 0% 100%,
+    #000 0deg,
+    #000 var(--sweep),
+    transparent var(--sweep)
+  );
+  -webkit-mask-image: conic-gradient(
+    from -90deg at 0% 100%,
+    #000 0deg,
+    #000 var(--sweep),
+    transparent var(--sweep)
+  );
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.curtain.curtainTowardRegister,
+.curtain.curtainTowardLogin {
+  animation: curtainBottle var(--auth-anim-duration) linear forwards;
+}
+
+@keyframes infoAnimTowardRegister {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    filter: blur(0);
+  }
+  40% {
+    transform: translate3d(-15vw, 0, 0);
+    opacity: 0;
+    filter: blur(18px);
+  }
+  45% {
+    transform: translate3d(-15vw, 0, 0);
+    opacity: 0;
+    filter: blur(18px);
+  }
+  48% {
+    transform: translate3d(15vw, 0, 0);
+    opacity: 0;
+    filter: blur(18px);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes formAnimTowardRegister {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    filter: blur(0);
+  }
+  40% {
+    transform: translate3d(15vw, 0, 0);
+    opacity: 0;
+    filter: blur(18px);
+  }
+  45% {
+    transform: translate3d(15vw, 0, 0);
+    opacity: 0;
+    filter: blur(18px);
+  }
+  48% {
+    transform: translate3d(-15vw, 0, 0);
+    opacity: 0;
+    filter: blur(18px);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes infoAnimTowardLogin {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    filter: blur(0);
+  }
+  40% {
+    transform: translate3d(15vw, 0, 0);
+    opacity: 0;
+    filter: blur(18px);
+  }
+  45% {
+    transform: translate3d(15vw, 0, 0);
+    opacity: 0;
+    filter: blur(18px);
+  }
+  48% {
+    transform: translate3d(-15vw, 0, 0);
+    opacity: 0;
+    filter: blur(18px);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes formAnimTowardLogin {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    filter: blur(0);
+  }
+  40% {
+    transform: translate3d(-15vw, 0, 0);
+    opacity: 0;
+    filter: blur(18px);
+  }
+  45% {
+    transform: translate3d(-15vw, 0, 0);
+    opacity: 0;
+    filter: blur(18px);
+  }
+  48% {
+    transform: translate3d(15vw, 0, 0);
+    opacity: 0;
+    filter: blur(18px);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.infoAnimLayer {
+  position: relative;
+  width: 100%;
+}
+
+.infoAnimLayer.infoAnimTowardRegister {
+  animation: infoAnimTowardRegister var(--auth-anim-duration)
+    cubic-bezier(0.45, 0.18, 0.35, 1) forwards;
+}
+
+.formWrapper.formAnimTowardRegister {
+  animation: formAnimTowardRegister var(--auth-anim-duration)
+    cubic-bezier(0.45, 0.18, 0.35, 1) forwards;
+}
+
+.infoAnimLayer.infoAnimTowardLogin {
+  animation: infoAnimTowardLogin var(--auth-anim-duration)
+    cubic-bezier(0.45, 0.18, 0.35, 1) forwards;
+}
+
+.formWrapper.formAnimTowardLogin {
+  animation: formAnimTowardLogin var(--auth-anim-duration)
+    cubic-bezier(0.45, 0.18, 0.35, 1) forwards;
+}
+
+.infoSection {
+  background-color: var(--color-green);
+  color: var(--color-white);
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  min-height: 350px;
+  clip-path: none;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 100px;
+}
+
+.logoIcon {
+  width: auto;
+  height: 32px;
+  display: block;
+  filter: brightness(0) invert(1);
+  color: var(--color-white);
+}
+
+.infoContent {
+  text-align: left;
+  max-width: 100%;
+}
+
+.infoContent h1 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: var(--color-highlight-green);
+}
+
+.pillImageContainer {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  z-index: 1;
+}
+
+.floatingPill {
+  width: 60%;
+  height: 100px;
+  object-fit: contain;
+}
+
+.formSection {
+  flex: 1;
+  padding: 20px;
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+  margin-left: 0;
+  clip-path: none;
+}
+
+.formDecor {
+  position: absolute;
+  bottom: 0px;
+  right: -10px;
+  width: 220px;
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.formWrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 400px;
+  margin-top: var(--auth-form-offset-y);
+}
+
+.formWrapper h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-black);
+  margin-bottom: 24px;
+}
+
+.formTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input {
+  width: 100%;
+  padding: 13px 18px;
+  border: 1px solid var(--border-input);
+  border-radius: var(--radius-full);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input:focus {
+  border-color: var(--color-green);
+}
+
+.input::placeholder {
+  color: var(--text-placeholder);
+}
+
+.primaryBtn {
+  width: 100%;
+  padding: 13px 18px;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius-full);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.primaryBtn:hover {
+  background-color: var(--color-dark-green);
+  transform: translateY(-1px);
+}
+
+.primaryBtn[data-auth-type="login"] {
+  margin-top: 100px;
+}
+
+.primaryBtn[data-auth-type="register"] {
+  margin-top: 20px;
+}
+
+.switchAuth {
+  text-align: center;
+  margin-top: 14px;
+  margin-bottom: 190px;
+  font-size: 12px;
+  color: var(--color-grey);
+}
+
+.switchAuth span {
+  color: var(--color-green);
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.switchAuth span:hover {
+  color: var(--color-dark-green);
+}
+
+.errorText {
+  color: var(--color-red);
+  font-size: 13px;
+  text-align: center;
+}
+
+.successText {
+  color: var(--color-green);
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .authContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    min-height: 100vh;
+  }
+
+  .infoSection {
+    flex: 1;
+    min-height: 100vh;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      calc(100% - var(--auth-diagonal) - var(--auth-diagonal-overlap)) 100%,
+      0 100%
+    );
+  }
+
+  .logoContainer {
+    justify-content: flex-start;
+    margin-bottom: 65px;
+  }
+
+  .logoIcon {
+    height: 44px;
+  }
+
+  .infoContent {
+    text-align: left;
+    max-width: 42%;
+  }
+
+  .infoContent h1 {
+    font-size: 54px;
+    color: var(--color-white);
+  }
+
+  .pillImageContainer {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+  }
+
+  .floatingPill {
+    width: 150px;
+    height: 70px;
+  }
+
+  .formSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 100vh;
+    background-color: var(--color-white);
+    padding: 28px 32px;
+    position: relative;
+    overflow: hidden;
+    margin-left: calc(-1 * var(--auth-diagonal) - var(--auth-diagonal-overlap));
+    z-index: 2;
+    clip-path: polygon(
+      calc(var(--auth-diagonal) + var(--auth-diagonal-overlap)) 0,
+      100% 0,
+      100% 100%,
+      0 100%
+    );
+  }
+
+  .form {
+    gap: 14px;
+  }
+
+  .formWrapper {
+    width: min(100%, 400px);
+    margin-top: 0;
+    flex-shrink: 0;
+  }
+
+  .switchAuth {
+    margin-bottom: 50px;
+  }
+
+  .formTitle {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .formDecor {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    pointer-events: none;
+  }
+
+  .authContainer.registerMode .formDecor {
+    right: auto;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(-1);
+    z-index: 3;
+  }
+
+  .authContainer.registerMode {
+    flex-direction: row-reverse;
+  }
+
+  .authContainer.registerMode .infoSection {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    margin-left: 0;
+    margin-right: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    z-index: 2;
+  }
+
+  .authContainer.registerMode .formSection {
+    background-color: var(--color-white);
+    margin-left: 0;
+    margin-right: calc(
+      -1 * var(--auth-diagonal) - var(--auth-diagonal-overlap)
+    );
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    z-index: 1;
+  }
+
+  .authContainer.registerMode .infoContent {
+    text-align: right;
+    max-width: 42%;
+    margin-top: 40px;
+    margin-left: 57%;
+  }
+
+  .authContainer.registerMode .logoContainer {
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .authContainer.registerMode .formWrapper {
+    margin-right: auto;
+  }
+
+  .authContainer.registerMode .pillImageContainer {
+    right: auto;
+    left: 48%;
+    top: 35%;
+    z-index: 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .authContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    min-height: 100vh;
+  }
+
+  .infoSection {
+    flex: 1.1;
+    min-height: 100vh;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+  }
+
+  .logoContainer {
+    justify-content: flex-start;
+    margin-bottom: 65px;
+  }
+
+  .logoIcon {
+    height: 44px;
+  }
+
+  .infoContent {
+    text-align: left;
+    max-width: 60%;
+  }
+
+  .infoContent h1 {
+    font-size: 54px;
+    color: var(--color-white);
+  }
+
+  .pillImageContainer {
+    position: absolute;
+    top: 170px;
+    left: 620px;
+  }
+
+  .floatingPill {
+    width: 150px;
+    height: 70px;
+  }
+
+  .formSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 100vh;
+    background-color: var(--color-white);
+    padding: 28px 32px;
+    position: relative;
+    overflow: hidden;
+    margin-left: calc(-1 * var(--auth-diagonal) - var(--auth-diagonal-overlap));
+    z-index: 2;
+    clip-path: polygon(
+      calc(var(--auth-diagonal) + var(--auth-diagonal-overlap)) 0,
+      100% 0,
+      100% 100%,
+      0 100%
+    );
+  }
+
+  .form {
+    gap: 14px;
+  }
+
+  .formWrapper {
+    width: min(100%, 400px);
+    margin-top: 0;
+    flex-shrink: 0;
+    margin-right: 20%;
+  }
+
+  .switchAuth {
+    margin-bottom: 50px;
+  }
+
+  .formTitle {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .formDecor {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    pointer-events: none;
+  }
+
+  .authContainer.registerMode .formDecor {
+    right: auto;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(-1);
+    z-index: 3;
+  }
+
+  .authContainer.registerMode {
+    flex-direction: row-reverse;
+  }
+
+  .authContainer.registerMode .infoSection {
+    flex: 1.1;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    margin-left: 0;
+    margin-right: 0;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 60% 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    z-index: 2;
+  }
+
+  .authContainer.registerMode .formSection {
+    background-color: var(--color-white);
+    margin-left: 0;
+    margin-right: calc(
+      -1 * var(--auth-diagonal) - var(--auth-diagonal-overlap)
+    );
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    z-index: 1;
+  }
+
+  .authContainer.registerMode .infoContent {
+    text-align: right;
+    max-width: 60%;
+    margin-top: 40px;
+    margin-left: 40%;
+  }
+
+  .authContainer.registerMode .logoContainer {
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .authContainer.registerMode .formWrapper {
+    margin-left: 4%;
+    margin-right: 0;
+    margin-top: 100px;
+  }
+
+  .authContainer.registerMode .pillImageContainer {
+    right: auto;
+    left: 350px;
+    top: 175px;
+    z-index: 3;
+  }
+}

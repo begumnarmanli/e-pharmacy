@@ -1,0 +1,302 @@
+[
+  {
+    "id": "0",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/5_gi6hxy.jpg",
+    "name": "Aspirin",
+    "suppliers": "Square",
+    "stock": "12",
+    "price": "89.66",
+    "category": "Medicine",
+    "description": "Aspirin is one of the most widely used medications in the world. It belongs to the class of nonsteroidal anti-inflammatory drugs (NSAIDs) and works by reducing substances in the body that cause pain, fever, and inflammation. It is commonly used to relieve mild to moderate pain from headaches, muscle aches, toothaches, and colds. Aspirin is also used to reduce fever and as an anti-inflammatory medication. In low doses, it is taken to reduce the risk of heart attacks, strokes, and chest pain. Always consult your doctor before long-term use, as it may cause stomach irritation or bleeding in some patients."
+  },
+  {
+    "id": "1",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/4_ydstaw.jpg",
+    "name": "Paracetamol",
+    "suppliers": "Acme",
+    "stock": "19",
+    "price": "34.16",
+    "category": "Heart",
+    "description": "Paracetamol, also known as acetaminophen, is a common over-the-counter medication used to treat mild to moderate pain and fever. It is one of the safest pain relievers when taken as directed and is suitable for most adults and children. Paracetamol works by blocking pain signals in the brain and reducing fever by affecting the heat-regulating center. It is often recommended for headaches, backaches, toothaches, and menstrual cramps. Unlike NSAIDs, it does not cause stomach irritation, making it a preferred option for people with sensitive stomachs. Avoid exceeding the recommended dose to protect liver health."
+  },
+  {
+    "id": "2",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/3_sxpamk.jpg",
+    "name": "Ibuprofen",
+    "suppliers": "Beximco",
+    "stock": "09",
+    "price": "53.76",
+    "category": "Head",
+    "description": "Ibuprofen is a nonsteroidal anti-inflammatory drug (NSAID) used to relieve pain, reduce inflammation, and lower fever. It is commonly prescribed for headaches, dental pain, menstrual cramps, muscle aches, and arthritis. Ibuprofen works by inhibiting the production of prostaglandins, which are chemicals in the body that cause inflammation and pain. It is available in various forms including tablets, capsules, and liquid. While generally safe for short-term use, long-term use may increase the risk of stomach ulcers and cardiovascular issues. Always take with food or milk to reduce stomach upset and consult your healthcare provider for chronic conditions."
+  },
+  {
+    "id": "3",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/1_qgdhin.jpg",
+    "name": "Acetaminophen",
+    "suppliers": "ACI",
+    "stock": "14",
+    "price": "28.57",
+    "category": "Hand",
+    "description": "Acetaminophen is a widely used analgesic and antipyretic medication that provides effective relief from pain and fever. It is the active ingredient in many over-the-counter products and is considered safe for most people when used as directed. Acetaminophen is commonly used for treating headaches, sore throats, muscle aches, back pain, and arthritis. It is particularly recommended for individuals who cannot take NSAIDs due to stomach sensitivity or other medical conditions. It is important not to exceed the maximum daily dose to avoid potential liver damage. Keep out of reach of children and follow dosage instructions carefully."
+  },
+  {
+    "id": "4",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/2_ifhe1n.jpg",
+    "name": "Naproxen",
+    "suppliers": "Uniliver",
+    "stock": "10",
+    "price": "56.34",
+    "category": "Leg",
+    "description": "Naproxen is a nonsteroidal anti-inflammatory drug (NSAID) that is used to relieve pain, tenderness, swelling, and stiffness caused by various conditions. It is commonly used for arthritis, gout, tendinitis, bursitis, menstrual cramps, and mild to moderate pain. Naproxen works by blocking the production of certain natural substances that cause inflammation. Compared to other NSAIDs, naproxen has a longer duration of action, meaning it can be taken less frequently. It is available over the counter and by prescription in higher doses. Take with food, milk, or antacids to reduce the risk of stomach upset."
+  },
+  {
+    "id": "5",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/5_gi6hxy.jpg",
+    "name": "Amoxicillin",
+    "suppliers": "Square",
+    "stock": "25",
+    "price": "45.99",
+    "category": "Medicine",
+    "description": "Amoxicillin is a broad-spectrum penicillin antibiotic used to treat a wide variety of bacterial infections. It works by stopping the growth of bacteria and is effective against infections of the ear, nose, throat, urinary tract, and skin. It is also used in combination with other medications to treat stomach ulcers caused by Helicobacter pylori. Amoxicillin is one of the most commonly prescribed antibiotics for children and adults alike. It is important to complete the full course of treatment even if symptoms improve to prevent antibiotic resistance. Do not use for viral infections such as colds or flu."
+  },
+  {
+    "id": "6",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/4_ydstaw.jpg",
+    "name": "Lisinopril",
+    "suppliers": "Acme",
+    "stock": "17",
+    "price": "29.88",
+    "category": "Heart",
+    "description": "Lisinopril is an ACE inhibitor used primarily to treat high blood pressure (hypertension) and heart failure. It works by relaxing blood vessels so the heart does not have to work as hard to pump blood. Lisinopril is also used to improve survival after a heart attack and to protect the kidneys in people with diabetes. It is taken once daily and its effects can usually be felt within a few hours. Common side effects include a dry cough, dizziness, and elevated potassium levels. Regular monitoring of blood pressure and kidney function is recommended during treatment. Do not use during pregnancy as it can harm the unborn baby."
+  },
+  {
+    "id": "7",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/3_sxpamk.jpg",
+    "name": "Ciprofloxacin",
+    "suppliers": "Beximco",
+    "stock": "11",
+    "price": "38.45",
+    "category": "Head",
+    "description": "Ciprofloxacin is a fluoroquinolone antibiotic used to treat a variety of bacterial infections including urinary tract infections, respiratory infections, skin infections, and bone and joint infections. It works by killing bacteria or preventing their growth. Ciprofloxacin is also used to prevent and treat anthrax exposure. It is a powerful antibiotic and should only be used when prescribed by a doctor. Take on an empty stomach for best absorption and avoid taking with dairy products or calcium-fortified juices. Side effects may include nausea, diarrhea, and dizziness. Avoid prolonged sun exposure during treatment as it may increase sensitivity."
+  },
+  {
+    "id": "8",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/1_qgdhin.jpg",
+    "name": "Hydrochlorothiazide",
+    "suppliers": "ACI",
+    "stock": "22",
+    "price": "24.76",
+    "category": "Hand",
+    "description": "Hydrochlorothiazide is a thiazide diuretic (water pill) used to treat high blood pressure and fluid retention (edema) associated with various conditions including heart failure, liver disease, and kidney disorders. It works by causing the kidneys to eliminate excess water and salt from the body, which helps lower blood pressure and reduce swelling. It is often used in combination with other blood pressure medications for better control. Regular monitoring of electrolyte levels, especially potassium, is important during treatment. Patients should stay well hydrated and avoid prolonged sun exposure. Consult your doctor before use if you have kidney or liver problems."
+  },
+  {
+    "id": "9",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/2_ifhe1n.jpg",
+    "name": "Prednisone",
+    "suppliers": "Uniliver",
+    "stock": "15",
+    "price": "48.99",
+    "category": "Leg",
+    "description": "Prednisone is a corticosteroid medication that reduces inflammation and suppresses the immune system. It is used to treat a wide range of conditions including allergic reactions, asthma, inflammatory bowel disease, lupus, psoriasis, and arthritis. Prednisone works by mimicking the effects of cortisol, a hormone naturally produced by the adrenal glands. It is very effective but should be used at the lowest effective dose for the shortest possible time due to potential side effects with long-term use, including weight gain, bone loss, and increased blood sugar levels. Never stop taking prednisone suddenly without consulting your doctor as it can cause withdrawal symptoms."
+  },
+  {
+    "id": "10",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/5_gi6hxy.jpg",
+    "name": "Propranolol",
+    "suppliers": "Square",
+    "stock": "18",
+    "price": "35.66",
+    "category": "Medicine",
+    "description": "Propranolol is a beta-blocker medication used to treat high blood pressure, angina, irregular heartbeats, and tremors. It is also used to prevent migraines and to manage symptoms of anxiety. Propranolol works by blocking the action of certain natural chemicals in the body, such as epinephrine, on the heart and blood vessels. This reduces heart rate, blood pressure, and strain on the heart. It may also be prescribed after a heart attack to improve survival. Do not stop taking propranolol suddenly as this can worsen heart conditions. Regular monitoring of heart rate and blood pressure is recommended during treatment."
+  },
+  {
+    "id": "11",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/4_ydstaw.jpg",
+    "name": "Omeprazole",
+    "suppliers": "Acme",
+    "stock": "14",
+    "price": "42.16",
+    "category": "Heart",
+    "description": "Omeprazole is a proton pump inhibitor (PPI) that reduces the amount of acid produced in the stomach. It is used to treat gastroesophageal reflux disease (GERD), stomach ulcers, erosive esophagitis, and Zollinger-Ellison syndrome. Omeprazole provides relief from heartburn, acid reflux, and indigestion by blocking the enzyme system responsible for acid secretion. It is typically taken once daily before a meal for best results. Long-term use may be associated with reduced magnesium and calcium absorption, so supplementation may be recommended. Consult your doctor if symptoms persist after 14 days of treatment. Not recommended for immediate relief of heartburn."
+  },
+  {
+    "id": "12",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/3_sxpamk.jpg",
+    "name": "Diazepam",
+    "suppliers": "Beximco",
+    "stock": "08",
+    "price": "27.76",
+    "category": "Head",
+    "description": "Diazepam belongs to the benzodiazepine family of drugs and is used to treat anxiety, alcohol withdrawal, muscle spasms, and seizures. It works by enhancing the effect of a neurotransmitter called GABA in the brain, producing a calming effect on the nervous system. Diazepam is also used as a pre-medication before certain medical procedures. It is intended for short-term use only as it can lead to dependence and tolerance over time. Common side effects include drowsiness, dizziness, and muscle weakness. Avoid alcohol while taking diazepam. Do not operate heavy machinery or drive while taking this medication. Only use as directed by a licensed healthcare professional."
+  },
+  {
+    "id": "13",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/1_qgdhin.jpg",
+    "name": "Simvastatin",
+    "suppliers": "ACI",
+    "stock": "30",
+    "price": "18.57",
+    "category": "Hand",
+    "description": "Simvastatin is a statin medication used to lower cholesterol and triglyceride levels in the blood. By reducing LDL (bad) cholesterol and increasing HDL (good) cholesterol, it helps reduce the risk of heart attacks, strokes, and other cardiovascular events. Simvastatin works by inhibiting an enzyme in the liver that is responsible for producing cholesterol. It is usually taken in the evening as cholesterol production is highest at night. Regular blood tests to monitor liver function and cholesterol levels are recommended. Avoid consuming large amounts of grapefruit juice while taking simvastatin. Report any unexplained muscle pain or weakness to your doctor immediately."
+  },
+  {
+    "id": "14",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/2_ifhe1n.jpg",
+    "name": "Tramadol",
+    "suppliers": "Uniliver",
+    "stock": "13",
+    "price": "52.34",
+    "category": "Leg",
+    "description": "Tramadol is an opioid pain medication used to treat moderate to moderately severe pain. It works by changing how the brain and nervous system respond to pain signals. Tramadol is often prescribed when other pain relievers have not been effective enough. It is available in immediate-release and extended-release formulations. Due to its opioid properties, tramadol carries a risk of dependence, abuse, and addiction. It should only be used as prescribed by a healthcare professional. Common side effects include nausea, dizziness, constipation, and headache. Avoid alcohol and other central nervous system depressants while taking tramadol. Not recommended for use in children under 12 years of age."
+  },
+  {
+    "id": "15",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/5_gi6hxy.jpg",
+    "name": "Losartan",
+    "suppliers": "Square",
+    "stock": "20",
+    "price": "31.99",
+    "category": "Medicine",
+    "description": "Losartan is an angiotensin receptor blocker (ARB) used to treat high blood pressure and to protect the kidneys in patients with type 2 diabetes and high blood pressure. It works by blocking the action of angiotensin II, a substance in the body that causes blood vessels to tighten. By relaxing blood vessels, losartan helps lower blood pressure and improves blood flow. It is also used to reduce the risk of stroke in patients with high blood pressure and an enlarged heart. Losartan is generally well tolerated and does not cause the dry cough associated with ACE inhibitors. Do not use during pregnancy. Monitor potassium levels regularly during treatment."
+  },
+  {
+    "id": "16",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/4_ydstaw.jpg",
+    "name": "Metformin",
+    "suppliers": "Acme",
+    "stock": "12",
+    "price": "22.88",
+    "category": "Heart",
+    "description": "Metformin is the first-line medication for the treatment of type 2 diabetes. It works by decreasing the amount of glucose produced by the liver and improving insulin sensitivity in muscle cells, thereby lowering blood sugar levels. Unlike some other diabetes medications, metformin does not cause weight gain and may even promote modest weight loss. It is taken with meals to reduce gastrointestinal side effects such as nausea and diarrhea. Metformin may also reduce the risk of cardiovascular disease in diabetic patients. Regular monitoring of blood sugar levels and kidney function is important. It should be temporarily discontinued before certain imaging procedures involving contrast dye."
+  },
+  {
+    "id": "17",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/3_sxpamk.jpg",
+    "name": "Alprazolam",
+    "suppliers": "Beximco",
+    "stock": "09",
+    "price": "47.76",
+    "category": "Head",
+    "description": "Alprazolam is a benzodiazepine medication primarily used to treat anxiety disorders and panic disorder. It works by enhancing the activity of GABA, an inhibitory neurotransmitter in the brain, resulting in a calming and sedative effect. Alprazolam acts quickly and is effective for short-term management of acute anxiety symptoms. However, it carries a significant risk of dependence and withdrawal, and should only be used under close medical supervision. Long-term use is generally not recommended. Common side effects include drowsiness, memory impairment, and coordination problems. Alcohol and other CNS depressants should be avoided. Dosage should be tapered gradually when discontinuing to prevent withdrawal symptoms."
+  },
+  {
+    "id": "18",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/1_qgdhin.jpg",
+    "name": "Atorvastatin",
+    "suppliers": "ACI",
+    "stock": "18",
+    "price": "19.57",
+    "category": "Hand",
+    "description": "Atorvastatin is a statin medication used to lower levels of bad cholesterol (LDL) and triglycerides in the blood, while raising good cholesterol (HDL). It is one of the most prescribed medications worldwide and is used to reduce the risk of heart attack, stroke, and other heart-related complications in people with cardiovascular disease or risk factors. Atorvastatin works by inhibiting HMG-CoA reductase, an enzyme critical to cholesterol synthesis in the liver. It is taken once daily, with or without food, at any time of day. A healthy diet and regular exercise should accompany medication therapy. Report any muscle pain, tenderness, or weakness to your doctor promptly."
+  },
+  {
+    "id": "19",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/2_ifhe1n.jpg",
+    "name": "Zolpidem",
+    "suppliers": "Uniliver",
+    "stock": "16",
+    "price": "41.34",
+    "category": "Leg",
+    "description": "Zolpidem is a sedative-hypnotic medication used for the short-term treatment of insomnia. It works by slowing activity in the brain to allow sleep, helping patients fall asleep faster and stay asleep longer. Zolpidem is intended for short-term use only, typically 1 to 2 weeks. It may cause next-day drowsiness and impair driving or other activities requiring alertness, so it should be taken immediately before bed. There is a risk of dependence with prolonged use. Do not combine with alcohol or other CNS depressants. Some patients may experience unusual behavior during sleep such as sleepwalking. Always follow your doctor's instructions regarding dosage and duration of use."
+  },
+  {
+    "id": "20",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/5_gi6hxy.jpg",
+    "name": "Folic Acid",
+    "suppliers": "Square",
+    "stock": "14",
+    "price": "15.66",
+    "category": "Medicine",
+    "description": "Folic acid is the synthetic form of folate, a B vitamin that plays a critical role in DNA synthesis, cell division, and the formation of red blood cells. It is essential for preventing neural tube defects in developing fetuses, making it especially important for women who are pregnant or planning to become pregnant. Folic acid is also used to treat folate deficiency anemia and to reduce the side effects of certain medications like methotrexate. It supports brain health and may reduce the risk of certain cancers and heart disease. Most people can get adequate folate from a balanced diet, but supplementation is recommended during pregnancy. It is generally safe and well tolerated."
+  },
+  {
+    "id": "21",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/4_ydstaw.jpg",
+    "name": "Calcium Carbonate",
+    "suppliers": "Acme",
+    "stock": "21",
+    "price": "18.16",
+    "category": "Heart",
+    "description": "Calcium carbonate is used as a calcium supplement to prevent or treat calcium deficiencies and to relieve symptoms of heartburn, acid indigestion, and stomach upset. Calcium is essential for the development and maintenance of strong bones and teeth, proper nerve and muscle function, and blood clotting. Calcium carbonate supplements are commonly recommended for people at risk of osteoporosis, especially postmenopausal women and older adults. It is best absorbed when taken with food. Vitamin D is often combined with calcium to enhance absorption. Do not take more than the recommended dose as excessive calcium intake can lead to kidney stones and other complications. Consult your doctor before use if you have kidney disease."
+  },
+  {
+    "id": "22",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/3_sxpamk.jpg",
+    "name": "Vitamin D",
+    "suppliers": "Beximco",
+    "stock": "16",
+    "price": "12.76",
+    "category": "Head",
+    "description": "Vitamin D is a fat-soluble vitamin that is essential for the absorption of calcium and phosphorus, making it crucial for maintaining strong and healthy bones and teeth. It also plays an important role in immune function, muscle strength, and overall cell growth. Vitamin D deficiency is very common and is associated with bone diseases such as rickets in children and osteomalacia and osteoporosis in adults. The body produces vitamin D naturally when exposed to sunlight, but supplementation is often needed for people with limited sun exposure, darker skin tones, or certain medical conditions. Vitamin D3 (cholecalciferol) is the most effective supplemental form for raising vitamin D levels in the blood."
+  },
+  {
+    "id": "23",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/1_qgdhin.jpg",
+    "name": "Fish Oil",
+    "suppliers": "ACI",
+    "stock": "25",
+    "price": "23.57",
+    "category": "Hand",
+    "description": "Fish oil is a dietary supplement rich in omega-3 fatty acids, specifically EPA (eicosapentaenoic acid) and DHA (docosahexaenoic acid). These essential fatty acids have been shown to support heart health by lowering triglyceride levels, reducing inflammation, and decreasing the risk of heart disease. Fish oil may also benefit brain health, eye health, and joint function. It is recommended for people who do not regularly consume fatty fish such as salmon, mackerel, or sardines. Fish oil supplements are generally safe but may cause fishy breath or mild digestive discomfort. High doses may have a blood-thinning effect, so consult your doctor if you are taking anticoagulant medications."
+  },
+  {
+    "id": "24",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/2_ifhe1n.jpg",
+    "name": "Multivitamins",
+    "suppliers": "Uniliver",
+    "stock": "19",
+    "price": "17.34",
+    "category": "Leg",
+    "description": "Multivitamins are dietary supplements that contain a combination of vitamins, minerals, and other nutrients. They are designed to fill nutritional gaps in the diet and support overall health and wellbeing. Multivitamins typically include vitamins A, C, D, E, K, and B vitamins along with minerals such as calcium, magnesium, zinc, and iron. They are commonly used by people with restricted diets, pregnant women, older adults, and those with certain medical conditions. While multivitamins are not a substitute for a healthy diet, they can help ensure adequate intake of essential nutrients. Take with food to improve absorption and reduce the risk of stomach upset. Avoid exceeding the recommended dose as some vitamins can be harmful in excess."
+  },
+  {
+    "id": "25",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/5_gi6hxy.jpg",
+    "name": "Toothpaste",
+    "suppliers": "Square",
+    "stock": "30",
+    "price": "6.66",
+    "category": "Dental Care",
+    "description": "This fluoride toothpaste provides comprehensive dental care by protecting against cavities, strengthening tooth enamel, and promoting healthy gums. Regular use helps remove plaque and prevent tartar buildup, keeping teeth clean and breath fresh. Fluoride is the key active ingredient that remineralizes weakened enamel and makes teeth more resistant to acid attacks from bacteria in the mouth. Suitable for adults and children over 6 years old. Use twice daily — brush for at least two minutes each time for best results. Spit out after brushing and do not rinse immediately to allow fluoride to work effectively. Keep out of reach of young children to prevent accidental swallowing."
+  },
+  {
+    "id": "26",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/4_ydstaw.jpg",
+    "name": "Mouthwash",
+    "suppliers": "Acme",
+    "stock": "25",
+    "price": "8.16",
+    "category": "Dental Care",
+    "description": "This antibacterial mouthwash is formulated to kill germs that cause bad breath, plaque, and gum disease. It reaches areas that toothbrushing and flossing may miss, providing a thorough clean throughout the entire mouth. Regular use helps reduce gingivitis, prevent cavities, and keep breath fresh for hours. The antiseptic formula contains active ingredients that fight bacteria responsible for oral infections. Simply rinse for 30 seconds after brushing for best results. Do not swallow. Not recommended for children under 6 years of age. For adults with sensitive gums, an alcohol-free variant is available. Incorporate mouthwash into your daily oral hygiene routine for optimal dental health."
+  },
+  {
+    "id": "27",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/3_sxpamk.jpg",
+    "name": "Toothbrush",
+    "suppliers": "Beximco",
+    "stock": "20",
+    "price": "4.76",
+    "category": "Dental Care",
+    "description": "This ergonomically designed toothbrush features soft, rounded bristles that are gentle on gums while effectively removing plaque and food particles from teeth. The flexible neck helps absorb brushing pressure to prevent gum damage and enamel wear. The comfortable non-slip handle provides excellent grip for precise brushing. Suitable for adults and suitable for daily use. Dentists recommend replacing your toothbrush every 3 months or sooner if bristles become frayed. Use with fluoride toothpaste and brush for at least 2 minutes twice daily for optimal oral hygiene. Clean the brush thoroughly after each use and store it in an upright position to allow it to air dry."
+  },
+  {
+    "id": "28",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/1_qgdhin.jpg",
+    "name": "Facial Cleanser",
+    "suppliers": "ACI",
+    "stock": "14",
+    "price": "11.57",
+    "category": "Skin Care",
+    "description": "This gentle facial cleanser is specially formulated to remove dirt, oil, makeup, and impurities from the skin without stripping its natural moisture barrier. Suitable for all skin types including sensitive skin, it leaves the face feeling clean, refreshed, and soft. Enriched with soothing botanical extracts and gentle surfactants, it helps maintain the skin's natural pH balance. Use morning and evening as part of your skincare routine. Apply a small amount to wet skin, massage gently in circular motions, and rinse thoroughly with lukewarm water. For best results, follow with a toner and moisturizer. Dermatologist tested and free from harsh chemicals, parabens, and sulfates."
+  },
+  {
+    "id": "29",
+    "photo": "https://res.cloudinary.com/dfzot67y0/image/upload/v1775201452/2_ifhe1n.jpg",
+    "name": "Moisturizer",
+    "suppliers": "Uniliver",
+    "stock": "18",
+    "price": "13.34",
+    "category": "Skin Care",
+    "description": "This lightweight daily moisturizer delivers long-lasting hydration to keep skin soft, smooth, and supple throughout the day. Formulated with hyaluronic acid, glycerin, and nourishing plant extracts, it replenishes moisture levels and helps strengthen the skin's natural protective barrier. Suitable for all skin types, it absorbs quickly without leaving a greasy residue, making it perfect for use under makeup. Regular use helps reduce the appearance of fine lines and dry patches, leaving skin looking healthy and radiant. Apply to clean skin in the morning and evening after cleansing. Gently massage in upward circular motions until fully absorbed. Free from artificial fragrances, parabens, and mineral oils. Dermatologist tested and hypoallergenic."
+  }
+]

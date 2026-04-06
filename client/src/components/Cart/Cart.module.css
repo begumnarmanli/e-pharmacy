@@ -1,0 +1,428 @@
+.container {
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: var(--color-light-grey);
+}
+
+.pageTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--color-black);
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mainOrderCard {
+  background: var(--color-white);
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.innerSection {
+  padding: 24px;
+}
+
+.divider {
+  height: 1px;
+  background-color: var(--border-input);
+  margin: 0 24px;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--color-black);
+}
+
+.sectionSub {
+  font-size: 13px;
+  color: var(--color-grey);
+  margin-bottom: 24px;
+  line-height: 1.4;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.formGroup label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 50px;
+  border: 1px solid #e5e5e5;
+  background: var(--color-white);
+  outline: none;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.radioGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-black);
+}
+
+.radioLabel input {
+  display: none;
+}
+
+.customRadio {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-white);
+}
+
+.radioLabel input:checked ~ .customRadio {
+  border-color: var(--color-green);
+}
+
+.customRadio::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-green);
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.2s ease;
+}
+
+.radioLabel input:checked ~ .customRadio::after {
+  transform: scale(1);
+}
+
+.totalBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px;
+  background-color: #f1f8f5;
+  border-radius: 15px;
+  margin-bottom: 24px;
+}
+
+.productTopRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.productTopRow h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.productBottomRow {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 8px;
+}
+
+.placeOrderBtn {
+  width: 100%;
+  background: var(--color-green);
+  color: var(--color-white);
+  border: none;
+  padding: 16px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.productItem {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+  align-items: flex-start;
+}
+
+.productImgWrapper img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  background: var(--color-highlight-green);
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.productDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.productDetails h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+.productDesc {
+  font-size: 13px;
+  color: var(--color-grey);
+  margin-bottom: 8px;
+}
+
+.productPrice {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.quantityControl {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f7f7f7;
+  padding: 6px 12px;
+  border-radius: 50px;
+  border: 1px solid var(--border-input);
+}
+
+.qtyBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.qtyBtn img {
+  width: 14px;
+  height: 14px;
+}
+
+.qtyNumber {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.removeBtn {
+  background: #fff0f0;
+  color: #ff6b6b;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.emptyCart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 80px 20px;
+  font-size: 16px;
+  color: var(--color-grey);
+}
+
+.emptyCart .placeOrderBtn {
+  width: auto;
+  padding: 14px 40px;
+}
+
+.errorMsg {
+  color: #ff6b6b;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .contentWrapper {
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px;
+  }
+
+  .mainOrderCard {
+    border-radius: 24px;
+  }
+
+  .innerSection {
+    padding: 32px 40px;
+  }
+
+  .divider {
+    margin: 0 40px;
+  }
+
+  .sectionTitle {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .sectionSub {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .formGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0 24px;
+  }
+
+  .formGroup {
+    margin-bottom: 20px;
+  }
+
+  .formGroup input {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
+  .productImgWrapper img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .totalBox {
+    font-size: 17px;
+    padding: 16px 20px;
+  }
+
+  .placeOrderBtn {
+    width: 25%;
+    font-size: 15px;
+    padding: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 40px 60px;
+  }
+
+  .contentWrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 0;
+  }
+
+  .leftColumn {
+    flex: 1.2;
+  }
+
+  .rightColumn {
+    flex: 1;
+  }
+
+  .mainOrderCard {
+    border-radius: 28px;
+  }
+
+  .innerSection {
+    padding: 32px 40px;
+  }
+
+  .divider {
+    margin: 0 40px;
+  }
+
+  .sectionTitle {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .sectionSub {
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+
+  .formGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0 24px;
+  }
+
+  .formGroup {
+    margin-bottom: 20px;
+  }
+
+  .formGroup input {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
+  .totalBox {
+    font-size: 17px;
+    padding: 16px 20px;
+  }
+
+  .placeOrderBtn {
+    width: auto;
+    padding: 14px 40px;
+    font-size: 15px;
+  }
+
+  .productImgWrapper img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .productDetails h3 {
+    font-size: 16px;
+  }
+
+  .productItem {
+    padding: 20px 0;
+    gap: 20px;
+  }
+}
