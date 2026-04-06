@@ -19,9 +19,20 @@ const PORT = process.env.PORT || 5000;
 
 connectDB();
 
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://e-pharmacy-chi.vercel.app",
+];
+
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("CORS policy violation: Unauthorized origin"));
+      }
+    },
     credentials: true,
   }),
 );
@@ -79,5 +90,5 @@ app.use((err, req, res, _next) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
