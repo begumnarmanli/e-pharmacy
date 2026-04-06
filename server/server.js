@@ -21,7 +21,7 @@ connectDB();
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://e-pharmacy-chi.vercel.app",
+  "https://e-pharmacy-ruby.vercel.app",
 ];
 
 app.use(
