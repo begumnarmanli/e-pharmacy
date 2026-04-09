@@ -397,6 +397,25 @@
   color: var(--color-white);
 }
 
+.customToast {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border-radius: 50px;
+  padding: 12px 24px !important;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid var(--border-product-card);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.customToast :global(.go2371393118) {
+  background-color: var(--color-green);
+}
+
 @media (min-width: 768px) {
   .container {
     padding: 40px 40px;

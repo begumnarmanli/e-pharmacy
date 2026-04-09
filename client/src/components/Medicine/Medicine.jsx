@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
+import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import styles from "./Medicine.module.css";
@@ -32,7 +33,6 @@ const Medicine = () => {
   const [loading, setLoading] = useState(true);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  // Pagination States
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 9;
 
@@ -43,12 +43,15 @@ const Medicine = () => {
   const fetchProducts = useCallback(async () => {
     try {
       setLoading(true);
-      const { data } = await axios.get(`${import.meta.env.VITE_API_URL}/api/products`, {
-        params: {
-          category: category !== "All" ? category : undefined,
-          search: searchTerm || undefined,
+      const { data } = await axios.get(
+        `${import.meta.env.VITE_API_URL}/api/products`,
+        {
+          params: {
+            category: category !== "All" ? category : undefined,
+            search: searchTerm || undefined,
+          },
         },
-      });
+      );
       setProducts(data);
       setCurrentPage(1);
     } catch (error) {
@@ -76,7 +79,12 @@ const Medicine = () => {
       setModal("login");
       return;
     }
+
     addToCart(product);
+
+    toast.success(`${product.name} added to cart!`, {
+      className: styles.customToast,
+    });
   };
 
   const handlePageChange = (pageNumber) => {

@@ -102,6 +102,68 @@
   gap: 12px;
 }
 
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.developerSignature {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 10px;
+  padding-top: 10px;
+  cursor: pointer;
+  border-top: 1px solid var(--color-light-grey-30);
+}
+
+.nameGradient {
+  background: linear-gradient(
+    to right,
+    #ffffff 20%,
+    #a0ffd0 40%,
+    #ffffff 60%,
+    #ffffff 80%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: shimmer 3s linear infinite;
+  font-weight: 800;
+  position: relative;
+}
+
+.nameGradient::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--color-white);
+  transition: width 0.3s ease;
+  box-shadow: 0 0 8px var(--color-white);
+}
+
+.developerSignature:hover .nameGradient {
+  animation: shimmer 1.5s linear infinite;
+}
+
+.developerSignature:hover .nameGradient::after {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .container {
     padding: 0 40px;
@@ -182,6 +244,12 @@
     font-size: 14px;
     line-height: 18px;
   }
+
+  .developerSignature {
+    width: auto;
+    font-size: 14px;
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -256,5 +324,11 @@
   .policyLink,
   .separator {
     font-size: 14px;
+  }
+
+  .developerSignature {
+    position: absolute;
+    right: 70px;
+    border-top: none;
   }
 }

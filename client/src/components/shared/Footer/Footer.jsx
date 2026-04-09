@@ -88,6 +88,15 @@ const Footer = () => {
           <Link to="/terms-conditions" className={styles.policyLink}>
             Terms & Conditions
           </Link>
+          <a
+            href="https://github.com/begumnarmanli"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.developerSignature}
+          >
+            Developed by{" "}
+            <span className={styles.nameGradient}>Begüm Narmanlı</span>
+          </a>
         </div>
       </div>
     </footer>
